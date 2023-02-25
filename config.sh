@@ -7,13 +7,13 @@ git clone https://github.com/Thib1708/config.git
 printf "installing zsh-autosuggestion\n"
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> "$RC_FILE"
-printf "zsh-autosuggestion installation : DONE\n\n"
+printf "\033[1;32mzsh-autosuggestion installation : DONE\n\n"
 
 printf "installing zsh-syntax-highlighting\n"
 cd ~
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-printf "zsh-syntax-highlighting installation : DONE\n\n"
+printf "\033[1;32mzsh-syntax-highlighting installation : DONE\n\n"
 
 printf "adding alias\n"
 printf "
@@ -29,5 +29,8 @@ alias gcl='git clone'\n
 printf "installing print_news\n"
 chmod 751 ~/config/install-print_news.sh
 bash ~/config/install-print_news.sh
-printf "print_news installation : DONE\n\n"
+printf "\033[1;32mprint_news installation : DONE\n\n"
 
+printf "Adding .vimrc"
+cp -r ~/config.vimrc ~/
+printf "\033[1;32mDONE"
