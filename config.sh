@@ -3,18 +3,14 @@
 RC_FILE="$HOME/.zshrc"
 
 printf "installing zsh-autosuggestion\n"
-cd ~/.oh_my_zsh/custom/plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-printf "plugins=(\n
-# other plugins...\n
-zsh-autosuggestions\n
-)" >> "$RC_FILE"
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> "$RC_FILE"
 printf "zsh-autosuggestion installation : DONE\n\n"
 
 printf "installing zsh-syntax-highlighting\n"
 cd ~
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 printf "zsh-syntax-highlighting installation : DONE\n\n"
 
 printf "adding alias\n"
