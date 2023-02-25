@@ -9,11 +9,6 @@ mkdir articles
 chmod 751 ./bin/main.sh
 cd ..
 
-cp -r print_news "$HOME"
-
-cd "$HOME" || exit
-rm -rf temp_____
-
 RC_FILE="$HOME/.zshrc"
 
 # set up the alias
