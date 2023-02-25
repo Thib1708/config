@@ -2,7 +2,9 @@
 
 RC_FILE="$HOME/.zshrc"
 
+printf "\033[0minstalling config\n"
 git clone https://github.com/Thib1708/config.git
+printf "\033[1;32mconfig installation : DONE\n\n"
 
 printf "\033[0minstalling zsh-autosuggestion\n"
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
