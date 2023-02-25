@@ -2,10 +2,6 @@
 
 RC_FILE="$HOME/.zshrc"
 
-printf "installing zsh\n"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-printf "zsh installation : DONE\n\n"
-
 printf "installing zsh-autosuggestion\n"
 cd ~/.oh_my_zsh/custom/plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -30,10 +26,10 @@ alias gch='git checkout'\n
 alias gp='git push'\n
 alias gc='git commit'\n
 alias gcl='git clone'\n
-"
+" >> "$RC_FILE"
 
 printf "installing print_news\n"
 cd ~
-bash install-print_news.sh
+bash ~/config/install-print_news.sh
 printf "print_news installation : DONE\n\n"
 
