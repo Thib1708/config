@@ -36,4 +36,4 @@ printf "\033[38;5;14mopen ~/.zshrc and copy/paste your api_key in export API_KEY
 
 printf "\033[0mAdding .vimrc\n"
 cp -r ~/config/.vimrc ~/
-printf "\033[1;32mDONE"
+printf "\033[1;32mConfig installation : DONE"
