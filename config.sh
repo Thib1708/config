@@ -3,17 +3,17 @@
 RC_FILE="$HOME/.zshrc"
 
 printf "\033[0minstalling config\n"
-git clone https://github.com/Thib1708/config.git
+git clone --quiet https://github.com/Thib1708/config.git
 printf "\033[1;32mconfig installation : DONE\n\n"
 
 printf "\033[0minstalling zsh-autosuggestion\n"
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone --quiet https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> "$RC_FILE"
 printf "\033[1;32mzsh-autosuggestion installation : DONE\n\n"
 
 printf "\033[0minstalling zsh-syntax-highlighting\n"
 cd ~
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone --quiet https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 printf "\033[1;32mzsh-syntax-highlighting installation : DONE\n\n"
 

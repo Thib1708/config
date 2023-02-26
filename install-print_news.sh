@@ -1,7 +1,7 @@
 rm -rf print_news
 
 # download github
-git clone https://github.com/Thib1708/print_news.git
+git clone --quiete https://github.com/Thib1708/print_news.git
 
 cd ./print_news
 make 
