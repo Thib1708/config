@@ -1,10 +1,10 @@
 rm -rf print_news
 
 # download github
-git clone --quiete https://github.com/Thib1708/print_news.git
+git clone --quiet https://github.com/Thib1708/print_news.git
 
 cd ./print_news
-make 
+make >> /dev/null
 mkdir articles
 chmod 751 ./bin/main.sh
 cd ..
