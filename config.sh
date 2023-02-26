@@ -32,6 +32,7 @@ printf "\033[0minstalling print_news\n"
 chmod 751 ~/config/install-print_news.sh
 bash ~/config/install-print_news.sh
 bash ~/config/chargement.sh
+printf "\033[38;5;14mopen ~/.zshrc and copy/paste your api_key in export API_KEY=\"\"\033[0m\n"
 
 printf "\033[0mAdding .vimrc\n"
 cp -r ~/config/.vimrc ~/
