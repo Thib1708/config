@@ -3,7 +3,7 @@ i=0
 RC_FILE="$HOME/.zshrc"
 
 printf "\033[0minstalling config\n"
-git clone --quiet https://github.com/Thib1708/config.git
+git clone --quiet https://github.com/ThibaultGiraudon/config.git
 bash ~/config/chargement.sh
 
 printf "\033[0minstalling zsh-autosuggestion\n"
@@ -27,12 +27,6 @@ alias gp='git push'\n
 alias gc='git commit'\n
 alias gcl='git clone'\n
 " >> "$RC_FILE"
-
-printf "\033[0minstalling print_news\n"
-chmod 751 ~/config/install-print_news.sh
-bash ~/config/install-print_news.sh
-bash ~/config/chargement.sh
-printf "\033[38;5;14mopen ~/.zshrc and copy/paste your api_key in export API_KEY=\"\"\033[0m\n"
 
 printf "\033[0mAdding .vimrc\n"
 cp -r ~/config/.vimrc ~/
